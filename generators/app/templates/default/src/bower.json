@@ -1,0 +1,18 @@
+{
+  "name": "src",
+  "version": "0.0.1",
+  "authors": [],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    <% for(var i=1; i<=packages.length; i++) { %>
+    "<%= packages[i-1] %>": "*"<% if(i < packages.length){ %>,<% } %><% } %>
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
