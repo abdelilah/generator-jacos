@@ -2,14 +2,14 @@
   "name": "generator-jacos",
   "version": "0.0.1",
   "description": "Yeaoman generator to kick start a web project using jade templating enging + coffeescript + stylus using your favorite bower libraries.",
-  "main": "index.js",
+  "main": "generators/app/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-      "type": "git",
-      "url": "https://github.com/abdelilah/generator-jacos.git"
-    },
+    "type": "git",
+    "url": "https://github.com/abdelilah/generator-jacos.git"
+  },
   "keywords": [
     "yeoman-generator",
     "jacos",
@@ -17,7 +17,7 @@
     "bower",
     "stylus",
     "coffeescript",
-    "gulp"
+    "gulp",
     "livereload"
   ],
   "author": "Abdelilah Sawab",
