@@ -162,6 +162,12 @@ module.exports = generators.Base.extend({
     this.log(cwd+"/"+this.appname);
 
     fs.copySync(this.templatePath()+"/default", cwd+"/"+this.appname);
+
+    fs.ensureDir(cwd+"/"+this.appname+"/build");
+    fs.ensureDir(cwd+"/"+this.appname+"/build/css");
+    fs.ensureDir(cwd+"/"+this.appname+"/build/js");
+    fs.ensureDir(cwd+"/"+this.appname+"/build/fonts");
+    fs.ensureDir(cwd+"/"+this.appname+"/build/img");
   },
 
 
